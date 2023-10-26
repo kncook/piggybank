@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kid's Savings Tracker</title>
+  </head>
+  <body>
+    <h1>Kid's Savings Tracker</h1>
+    <h2>Savings: ${{ kid.savings }}</h2>
+    <h2>Savings Goal: ${{ kid.savings_goal }}</h2>
+    <form method="POST">
+      <input type="number" name="allowance" placeholder="Enter Allowance" />
+      <button type="submit" name="add_allowance">Add Allowance</button>
+    </form>
+    <form method="POST">
+      <input
+        type="number"
+        name="purchase"
+        placeholder="Enter Purchase Amount"
+      />
+      <button type="submit" name="make_purchase">Make Purchase</button>
+    </form>
+    <form method="POST">
+      <input
+        type="number"
+        name="goal_amount"
+        placeholder="Set Savings Goal Amount"
+      />
+      <button type="submit" name="set_goal">Set Savings Goal</button>
+    </form>
+    <form method="POST">
+      <input
+        type="number"
+        name="goal_contribution"
+        placeholder="Contribute to Savings Goal"
+      />
+      <button type="submit" name="add_to_goal">Add to Savings Goal</button>
+    </form>
+  </body>
+</html>
